@@ -7,12 +7,12 @@ import os
 st.markdown("""
     <style>
     html, body, [class*="css"]  {
-        font-size: 20px;
+        font-size: 18px;
     }
 
     .stApp {
         max-width: 100%;
-        padding: 2rem 5rem;
+        padding: 2rem 4rem;
     }
 
     body {
@@ -21,7 +21,7 @@ st.markdown("""
 
     .main-title {
         color: #000000;
-        font-size: 48px;
+        font-size: 36px;
         font-weight: bold;
         text-align: center;
         margin-top: 20px;
@@ -29,14 +29,14 @@ st.markdown("""
 
     .sub-header {
         color: #31333f;
-        font-size: 20px;
+        font-size: 18px;
         text-align: center;
-        margin-bottom: 30px;
+        margin-bottom: 25px;
     }
 
     div[data-baseweb="input"] input {
-        font-size: 22px;
-        padding: 0.75em 0.75em;
+        font-size: 18px;
+        padding: 0.5em 0.75em;
     }
 
     div[data-baseweb="input"] input::placeholder {
@@ -44,36 +44,37 @@ st.markdown("""
     }
 
     div.stButton > button {
-        font-size: 20px;
-        padding: 0.75em 2.5em;
+        font-size: 16px;
+        padding: 0.5em 2em;
     }
 
     .prediction-box {
         background-color: #ffffff;
-        padding: 30px;
-        border-radius: 15px;
-        box-shadow: 0px 0px 15px rgba(0,0,0,0.1);
-        font-size: 22px;
+        padding: 20px 30px;
+        border-radius: 12px;
+        box-shadow: 0px 0px 12px rgba(0,0,0,0.1);
+        font-size: 18px;
         width: 100%;
-        max-width: 800px;
-        margin: 37px auto;
+        max-width: 585px;
+        margin: 10px auto;
     }
 
     .stForm {
         background-color: #ffffff;
-        padding: 30px 40px;
-        border-radius: 15px;
-        box-shadow: 0px 0px 15px rgba(0,0,0,0.08);
-        margin-top: 37px;
+        padding: 20px 30px;
+        border-radius: 12px;
+        box-shadow: 0px 0px 12px rgba(0,0,0,0.08);
+        margin: 45px auto;
+        max-width: 585px;
     }
 
     section[data-testid="stSidebar"] > div:first-child {
-        padding: 0.55rem;
+        padding: 0.5rem;
     }
 
     .info-box {
-        line-height: 1.6;
-        font-size: 16px;
+        line-height: 1.5;
+        font-size: 14px;
     }
     </style>
 """, unsafe_allow_html=True)
@@ -113,7 +114,7 @@ with st.sidebar:
 
 # Title
 st.markdown("<div class='main-title'>📊 Prediksi Nilai Mahasiswa</div>", unsafe_allow_html=True)
-st.markdown("<div class='sub-header'>Silahkan masukan nilai-nilai Anda di bawah ini untuk mendapatkan prediksi nilai akhir Anda.</div>", unsafe_allow_html=True)
+# st.markdown("<div class='sub-header'>Silahkan masukan nilai di bawah ini.</div>", unsafe_allow_html=True)
 
 # Form Input
 with st.form("prediksi_form"):
