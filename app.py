@@ -120,11 +120,11 @@ st.markdown("<div class='main-title'>📊 Prediksi Nilai Mahasiswa</div>", unsaf
 with st.form("prediksi_form"):
     col1, col2, col3 = st.columns(3)
     with col1:
-        utm = st.text_input("Nilai UTM", placeholder="0.00")
+        utm = st.text_input("Nilai UTM", placeholder="0")
     with col2:
         uam = st.text_input("Nilai UAM", placeholder="0.00")
     with col3:
-        uas = st.text_input("Nilai UAS", placeholder="0.00")
+        uas = st.text_input("Nilai UAS", placeholder="0")
 
     praktikum = st.text_input("Nilai Praktikum/Tugas (Nilai Laporan BBDM)", placeholder="0.00")
     bbdm = st.text_input("Nilai BBDM", placeholder="0.00")
